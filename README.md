@@ -3,7 +3,9 @@ Chrome extension to create and use voice commands to play audio. It leverages th
 
 The extension is available for download here: https://chrome.google.com/webstore/detail/voice-controlled-media-pl/mmmjpjajlahpmdadaigpcjdanhbjmlma
 
-Once installed, you will need to right click on it and go to the Options page to configure the URLs from which you will retrieve your audio files. For local files, you will need to allow the extension to access local file in order for it to work.
+Once installed, you will need to right click on it and go to the Options page and allow the microphone access for the extension.
+
+Then, start to configure the URLs from which you will retrieve your audio files. For local files, you will need to allow the extension to access local files in order for it to work.
 
 In the options page, you will have to create the voice command you will use. Only English language is supported in this version, but this can be changed in the source file if needed. Just look for this line in the listener file "rec.lang = 'en-US'" change it to any of the supported language by the WebSpeechAPI, check the langs file for the list.
 
