@@ -1,0 +1,50 @@
+#audio-list {
+	text-align: center;
+}
+
+#cmd-list {
+	text-align: center;
+}
+
+#cmd-add-btn, #cmd-remove-btn {
+	text-align: center;
+}
+
+#cmd-new {
+	display:flex;
+	justify-content: center;
+}
+
+#cmd-btn {
+	display:flex;
+	justify-content: center;
+}
+
+#cmd-name {
+	text-align: center;
+}
+
+#cmd-desc {
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	font-size: x-large;
+}
+
+table {
+	margin: auto;
+}
+
+table th, td {
+	background-color: gainsboro;
+	border: 5px;
+	padding: 8px;
+	border-style: double;
+	border-width: unset;
+}
+
+button:hover {
+	color:red;
+}

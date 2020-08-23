@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <title>AudioExtension</title>
+  </head>
+  <body>
+  <h1 style='text-align:center'>Voice-Controlled Audio Player</h1>
+  <div id="audio-list">
+	<span><strong>Path : </strong></span><input type="text" id="path" name="path" placeholder="URL or local Audio Path" required><button id="save-path">Save</button>
+	<p><strong>Current Path : </strong><span id="cpath"></span></p>
+	<h3>Available Songs</h3>
+		<table id="audio-table">
+			<thead>
+			<tr>
+				<th style="/*width: 100px;*/">Command</th>
+				<th style="/*width: 500px;*/">Command Type</th>
+				<th style="/*width: 500px;*/">AudioFile</th>
+			</tr>
+			</thead>
+			<tbody id='new-cmd'><tr>
+				<td>
+					<input type="text" id="cmd-name" name="cmdname" placeholder="Command (Required)" required>
+				</td>
+				<td>
+					<select id="cmd-options">
+						<option value='Play'>Play Audio</option>
+						<option value='PrintScreen'>Play Audio and Print Screen</option>
+						<option value='IdlePlay'>Play audio for 30 seconds</option>
+					</select>
+				</td>
+				<td><input id="audiofile" type="file" name="audiofile" required></td>
+				</tbody></tr>
+		</table>
+		<button id="cmd-add-attach">Add More Attachements</button>
+	<div id="audiotrack">
+	</div>
+  </div>
+  
+	<div id="cmd-list">
+	<h3>Available Commands:</h3>
+	<ul id="cmd-list-all">
+		<li><strong>Play</strong> - Plays the current song or starts the first song.</li>
+		<li><strong>Stop</strong> - Stops the the current song and nullifies the playback time.</li>
+		<li><strong>Pause</strong> - Pauses the current song.</li>
+		<li><strong>Next</strong> Plays the next song in the list.</li>
+		<li><strong>Previous</strong> - Plays the previous song in the list.</li>
+		<li><strong>Play [slice from song's or singer's name]</strong> - Plays a song with a particular name, if found.</li>
+	</ul>
+	</div>
+	<link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+  </body>
+</html>

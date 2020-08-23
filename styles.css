@@ -1,0 +1,20 @@
+body {
+	/*text-align: center;
+	width: 275px;
+	margin:0px*/
+}
+
+#login {
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+}
+
+#title {
+	text-align: center;
+}
+
+input {
+	width: -webkit-fill-available;
+	text-align: center;
+}
